@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Imazine" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!--Colors-->
+        <item name="colorPrimary">@color/amber_500</item>
+        <item name="colorPrimaryVariant">@color/amber_300</item>
+        <item name="colorSecondary">@color/yellow_600</item>
+        <item name="colorOnPrimary">@color/gray_800</item>
+        <item name="colorOnSecondary">@color/white_50</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/background_color</item>
+        <item name="colorOnBackground">@color/text_color</item>
+        <item name="colorOnSurface">@color/text_color</item>
+        <item name="colorError">@color/error_color</item>
+        <item name="colorOnError">@color/white_50</item>
+        <item name="android:statusBarColor">@color/gray_800</item>
+
+        <!--Typography-->
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Imazine.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Imazine.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Imazine.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Imazine.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Imazine.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Imazine.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Imazine.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Imazine.Overline</item>
+
+        <item name="emphasisHighAlpha">0.87</item>
+        <item name="emphasisMediumAlpha">0.60</item>
+        <item name="emphasisDisabledAlpha">0.38</item>
+
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.App.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">
+            @style/ShapeAppearance.App.LargeComponent
+        </item>
+
+        <item name="snackbarStyle">@style/Widget.Imazine.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.Imazine.SnackbarButton</item>
+    </style>
+
+    <style name="Theme.Imazine.Splash">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+</resources>

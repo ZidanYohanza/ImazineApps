@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Imazine.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Imazine.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+    </style>
+
+    <style name="ThemeOverlay.Imazine.Snackbar" parent="">
+        <item name="colorPrimary">@color/amber_500</item>
+        <item name="colorOnSurface">@color/text_color</item>
+    </style>
+
+    <style name="Widget.Imazine.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+</resources>

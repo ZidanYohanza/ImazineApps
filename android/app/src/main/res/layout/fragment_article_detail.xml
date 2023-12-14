@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        app:navigationIcon="@drawable/ic_arrow_left" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/dimen_32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen_16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_post_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.App.SmallComponent"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextAppearance.Imazine.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:textSize="24sp"
+                tools:text="Perkembangan SIM Card Fisik dan iSIM sebagai Masa Depan SIM Card?" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/TextAppearance.Imazine.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:alpha="?attr/emphasisHighAlpha"
+                tools:text="10 April 2022 - 16:06" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/TextAppearance.Imazine.Body1.Serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:alpha="?attr/emphasisHighAlpha"
+                android:fontFamily="@font/montserrat_medium"
+                android:lineSpacingExtra="@dimen/dimen_12dp"
+                tools:text="@tools:sample/lorem/random" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

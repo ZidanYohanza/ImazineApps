@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar">#393936</color>
+    <color name="amber_500">#FCC100</color>
+    <color name="amber_300">#FCD54E</color>
+    <color name="yellow_600">#FCD617</color>
+
+    <color name="gray_800">#303030</color>
+    <color name="white_50">#FEFEFE</color>
+    <color name="black_50">#0e0e0e</color>
+    <color name="red_600">#FC4300</color>
+    <color name="red_800">#E03300</color>
+
+    <color name="error_color">@color/red_600</color>
+    <color name="background_color">@color/white_50</color>
+    <color name="text_color">@color/black_50</color>
+</resources>

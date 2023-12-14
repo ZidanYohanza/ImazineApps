@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_left" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16dp">
+
+            <TextView
+                style="@style/TextAppearance.Imazine.Brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/lbl_version"
+                style="@style/TextAppearance.Imazine.Subtitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:alpha="?attr/emphasisMediumAlpha"
+                android:gravity="center"
+                tools:text="Version 1.0.0" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/TextAppearance.Imazine.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:alpha="?attr/emphasisHighAlpha"
+                android:lineSpacingExtra="@dimen/dimen_4dp"
+                android:text="@string/app_description" />
+
+            <TextView
+                style="@style/TextAppearance.Imazine.Subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:alpha="?attr/emphasisMediumAlpha"
+                android:text="@string/lbl_social_media" />
+
+            <LinearLayout
+                android:id="@+id/card_ig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_32dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_instagram" />
+
+                <TextView
+                    style="@style/TextAppearance.Imazine.Caption"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:layout_weight="12"
+                    android:alpha="?emphasisHighAlpha"
+                    android:gravity="center_vertical"
+                    android:text="@string/social_media"
+                    android:textColor="?colorOnBackground"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:alpha="?attr/emphasisMediumAlpha"
+                    android:src="@drawable/ic_chevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_32dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_line" />
+
+                <TextView
+                    style="@style/TextAppearance.Imazine.Caption"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:layout_weight="12"
+                    android:alpha="?emphasisHighAlpha"
+                    android:gravity="center_vertical"
+                    android:text="@string/social_media"
+                    android:textColor="?colorOnBackground"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:alpha="?attr/emphasisMediumAlpha"
+                    android:src="@drawable/ic_chevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_linktree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_32dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_linktree" />
+
+                <TextView
+                    style="@style/TextAppearance.Imazine.Caption"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:layout_weight="12"
+                    android:alpha="?emphasisHighAlpha"
+                    android:gravity="center_vertical"
+                    android:text="@string/social_media"
+                    android:textColor="?colorOnBackground"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:alpha="?attr/emphasisMediumAlpha"
+                    android:src="@drawable/ic_chevron" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="@dimen/dimen_8dp"
+                android:alpha="?attr/emphasisDisabledAlpha"
+                android:background="?colorOnBackground" />
+
+            <LinearLayout
+                android:id="@+id/card_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_32dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_world" />
+
+                <TextView
+                    style="@style/TextAppearance.Imazine.Caption"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:layout_weight="12"
+                    android:alpha="?emphasisHighAlpha"
+                    android:gravity="center_vertical"
+                    android:text="@string/website"
+                    android:textColor="?colorOnBackground"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:alpha="?attr/emphasisMediumAlpha"
+                    android:src="@drawable/ic_chevron" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_32dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_mail" />
+
+                <TextView
+                    style="@style/TextAppearance.Imazine.Caption"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:layout_weight="12"
+                    android:alpha="?emphasisHighAlpha"
+                    android:gravity="center_vertical"
+                    android:text="@string/email"
+                    android:textColor="?colorOnBackground"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:layout_weight="1"
+                    android:alpha="?attr/emphasisMediumAlpha"
+                    android:src="@drawable/ic_chevron" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
